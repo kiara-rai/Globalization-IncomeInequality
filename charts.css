@@ -1,0 +1,32 @@
+body {
+ background: linear-gradient(to right, #001f3f, #0a3d6b, #204ecf);
+color: white;
+    
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      transition: transform 0.3s;
+    }
+
+    img:hover {
+      transform: scale(1.1);
+    }
+}
+
+.vertical-menu a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.vertical-menu a.active {
+  color: white;
+}
+
+.vertical-menu a {
+  font-size: 30px;
+  color:  white;
+  text-decoration: none;
+  width: 200px;
+  padding: 20px;
+}

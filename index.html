@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Globalization and Income Inequality in India</title>
+	<link rel="stylesheet" type="text/css" href="poustyle1.css">
+
+</head>
+<body>
+	<div class="vertical-menu">
+	<a href="index.html">Home</a> 
+	<a href="timeline.html">Timeline</a>
+	<a href="charts.html"> Statistics </a>
+	<a href="contact.html">Contact</a>
+</div>
+<div class="container">
+	<div class="slides slide1">
+<div id= "maintext">
+	<div id="header">Globalization</div> 
+	<div id="definition">A process of interaction and integration among the people, organizations, and governments of different nations; a process driven by international trade and investment and aided by information technology.</div>
+	</div>
+	<div class="container scroll"> V <i> Scroll down for more!</i></div>
+</div>
+	<div class="slides slide2">
+  <div id="maintext">
+    <div id="header">Globalization</div>
+    <div id="line2">Sounds great for the country, doesn't it?</div>
+    <div class="mindmap">
+      <div class="pointer">>Technological Advancements</div>
+      <div class="pointer">>Global Market Access</div>
+      <div class="pointer">>Access to Education</div>
+      <div class="pointer">>Capital Mobility</div>
+      <div class="pointer">>Employment Opportunities</div>
+
+    </div>
+  </div>
+</div>
+
+	<div class="slides slide3"> 
+		<h1 id="however"> However... </h1>
+		 </div>
+		<div class="slides slide4">Is it really positive for all of India?
+</div>
+
+	</div>
+	
+	</div>
+</div>
+
+<script>
+function isElementInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+function handleScroll() {
+  const mindmap = document.querySelector('.mindmap');
+  if (isElementInViewport(mindmap)) {
+    mindmap.classList.add('active');
+  }
+}
+
+window.addEventListener('scroll', handleScroll);
+
+handleScroll();
+</script>
+   <script>
+    $(document).ready(function () {
+        $("a").on('click', function (event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+
+                var hash = this.hash;
+
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function () {
+                    window.location.hash = hash;
+                });
+            }
+        });
+
+        $(window).scroll(handleScroll);
+    });
+</script>
+
+</body>
+</html> 
